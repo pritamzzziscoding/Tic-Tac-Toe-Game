@@ -1,0 +1,100 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 1.5rem;
+}
+
+body{
+    background-color: blanchedalmond;
+}
+
+.setup{
+    position: relative;
+    top: 100px;
+}
+
+.game{
+    padding: 5px;
+    height: 320px;
+    width: 320px;
+    gap: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: darkgreen;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.centering{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.keys{
+    border-radius: 0px;
+    height: 100px;
+    width: 100px;
+    background-color: yellowgreen;
+    color: darkblue;
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.keys:hover{
+    background-color: darkgreen;
+    color: white;
+}
+
+.main{
+    position: relative;
+    top: 70px;
+    transition: 3s;
+}
+
+.hide{
+    display: none;
+}
+
+.head{
+    padding: 5px;
+    background-color: yellowgreen;
+    color: rgb(7, 9, 68);
+    border-bottom: 5px solid darkgreen;
+}
+
+#winner{
+    margin-bottom: 15px;
+}
+
+#restart-btn{
+    background-color: yellowgreen;
+    font-weight: 600;
+    color: rgb(21, 58, 21);
+    border: 5px solid darkgreen;
+}
+
+#restart-btn:hover{
+    background-color: darkgreen;
+    color: whitesmoke;
+}
+
+#player-x, #player-y{
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: yellowgreen;
+    border: 2px solid darkcyan;
+    color: darkblue;
+    font-weight: 600;
+}
+
+#player-x:hover, #player-y:hover{
+    background-color: rgba(0, 255, 255, 0.283);
+    border: 2px solid blue;
+}
+
+.result{
+    position: relative;
+    top: 80px;
+}

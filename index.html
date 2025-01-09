@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1 class="d-flex justify-content-center head">Tic-Tac-Toe Game</h1>
+
+    <div class="choice setup">
+        <h1 class="d-flex justify-content-center mb-4">Play as ?</h1>
+        <div class="choose d-flex justify-content-center mb-4">
+            <button id="player-x" class="btn piece">X</button>
+            <button id="player-y" class="btn piece">O</button>
+        </div>
+        <p class="centering mb-0 fs-6">Welcome!!! to This Game</p>
+        <p class="centering fs-6">Select a Piece to start the game</p>
+    </div>
+
+    <div class="main hide">
+        <div class="centering">
+            <h1 id="play">Player-X's Turn</h1>
+        </div>
+        <div class="game mt-4">
+            <button class="btn keys" id="0"></button>
+            <button class="btn keys" id="1"></button>
+            <button class="btn keys" id="2"></button>
+            <button class="btn keys" id="3"></button>
+            <button class="btn keys" id="4"></button>
+            <button class="btn keys" id="5"></button>
+            <button class="btn keys" id="6"></button>
+            <button class="btn keys" id="7"></button>
+            <button class="btn keys" id="8"></button>
+        </div>
+    </div>
+
+    <div class="result centering hide">
+        <h2 id="winner">
+            !!! Match is drawn !!!
+        </h2>
+        <button id="restart-btn" class="btn">Play Again</button>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
