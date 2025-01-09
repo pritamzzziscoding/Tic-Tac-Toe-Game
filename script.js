@@ -37,7 +37,7 @@ function check(){
         let i = structure[0];
         let j = structure[1];
         let k = structure[2];
-        if(board[i]==board[j] && board[j]==board[k] && board[i]!=-1){
+        if(board[i]==board[j] && board[j]==board[k] && board[i]!=-1 && flag == false){
             flag = true;
             winPiece = (board[i] == playerPiece) ? "Player" : "Computer";
             keys[i].style.backgroundColor = "lightgreen";
@@ -50,7 +50,7 @@ function check(){
         winner.innerText = (winPiece == "Player") ? "!!!Player Wins!!!" : "!!!Computer Wins!!!";
         result.remove("hide");
     }
-    if(countTurn == 9){
+    if(countTurn === 9){
         setTimeout(()=>{
             result.remove("hide");
         },1000);
@@ -112,7 +112,7 @@ keys.forEach((val)=>{
             countTurn += 1;
             check();
             playersTurn = false;
-            if(flag == false){
+            if(countTurn<=8 && flag == false){
                 compPlays();
             }
         }
